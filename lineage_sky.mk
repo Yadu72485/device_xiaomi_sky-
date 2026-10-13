@@ -32,3 +32,5 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_DEFAULT_DEV_CERTIFICATE := build/make/target/product/security/testkey
