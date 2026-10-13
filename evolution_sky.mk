@@ -9,3 +9,4 @@ PRODUCT_DEVICE := sky
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 12 5G
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEFAULT_DEV_CERTIFICATE := build/make/target/product/security/testkey
