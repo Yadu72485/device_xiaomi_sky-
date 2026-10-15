@@ -13,21 +13,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit common Evolution X configurations
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
+$(call inherit-product-if-exists, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/sky/sky-vendor.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := sky
 PRODUCT_NAME := evolution_sky
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := 23076RN4BI
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi 12 5G
 PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS
